@@ -7,82 +7,130 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-logo">
-                <a href="#home">Geek 101</a>
+    <div class="box">
+        <h1 class="fname">Sardor Alimukhammad</h1>
+        <h3 class="title">Software Engineer & Designer</h3>
+        <header>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <button onclick="hideHome()"><a href="#contact" class="nav-link">// Home</a></button>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="hideExp()"><a href="#exp" class="nav-link">// Experience</a></button>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="hideProject()"><a href="#proj" class="nav-link">// Projects</a></button>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="hideContact()"><a href="#contact" class="nav-link">// Contact</a></button>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <!-- iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii____header____iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii -->
+
+        <section class="exp" id="home">
+            <div>
+                <h3 class="aboutO">About me</h3>
+                <p class="aboutT">
+                    Majoring in Computer Science allowed me to combine a love for computers with my passion for math, 
+                    putting me on the frontlines of solving complex problems and working through relevant projects daily. 
+                    I am a skilled entry level full-stack programmer. Problem-solving, being adaptable and quick learning 
+                    with programming passion, has been my greatest strengths. Besides these, I am comfortable with Java, 
+                    Python, JavaScript, Angular, Typescript, React, HTML, CSS, and SQL.
+                </p>
+            
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#intro" class="nav-link">Introduction</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#profile" class="nav-link">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#exp" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skill" class="nav-link">Skill</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#awards" class="nav-link">Achievements</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#proj" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        </section>
+        <!-- ___________________________About___ME______________________ -->
 
-    
-    <section class="home" id="home">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="img/video4.mp4" type="video/mp4">
-        </video>
-        <div class="home-text">
-            <h4>Hello</h4>
-            <h1>I'm Geek <br> <span>101</span></h1>
-            <h3>Software Developer and Programming Enthusiast </h3>
-            <a href="https://www.linkedin.com/" class="btn" target="_blank">Download Resume</a>
-        </div>
-    </section>
+        <section class="exp" id="exp">
+            <div>
+                My Experience
+                <div>
+                    <h4 class="aboutO">Stealth Start Up</h4>
+                    <h5  class="aboutT">Software Engineer</h5>
+                    <ul>
+                        <li>
+                            <p>Developed a full-stack web application using Angular, Node.js, Express.js, and MongoDB</p>
+                        </li>
+                        <li>
+                            <p>Developed a full-stack web application using Angular, Node.js, Express.js, and MongoDB</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="aboutO">BNY Mellon</h4>
+                    <h5  class="aboutT">Software Engineer</h5>
+                    <ul>
+                        <li>
+                            <p>Developed a full-stack web application using Angular, Node.js, Express.js, and MongoDB</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="aboutO">BNY Mellon</h4>
+                    <h5 class="aboutT">Software Engineer</h5>
+                    <ul>
+                        <li>
+                            <p>Developed a full-stack web application using Angular, Node.js, Express.js, and MongoDB</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="aboutO">YearUp</h4>
+                    <h5 class="aboutT">Software Engineer</h5>
+                    <ul>
+                        <li>
+                            <p>Developed a full-stack web application using Angular, Node.js, Express.js, and MongoDB</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="aboutO">Bmcc</h4>
+                    <h5 class="aboutT">Software Engineer</h5>
+                    <ul>
+                        <li>
+                            <p>Developed a full-stack web application using Angular, Node.js, Express.js, and MongoDB</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                Organization and your work
+            </div>
+        </section>
+        <!-- ____________________________^__________Experience______________________________________ -->
 
-    <section class="intro" id="intro">
-        Introduction
-    </section>
+        <section class="proj" id="proj">
+            <div>
+                Projects
+            </div>
+            <div>
+                Detailed Description
+            </div>
+            <div>
+                Links
+            </div>
+        </section>
 
-    <section class="profile" id="profile">
-        My Profile
-    </section>
+        <section class="contact" id="contact">
+            <div>
+                Contact
+            </div>
+            <div>
+                phone #, email, etc
+            </div>
+            <div>
+                Links of all plratforms
+            </div>
+        </section>
 
-    <section class="exp" id="exp">
-        Experience
-    </section>
-
-    <section class="skill" id="skill">
-        Skill
-    </section>
-
-    <section class="awards" id="awards">
-        Achievements
-    </section>
-
-    <section class="proj" id="proj">
-        Projects
-    </section>
-
-    <section class="contact" id="contact">
-        Contact
-    </section>
-    
-
-    <div>
-        <h4>reference link</h4>
-        <p>https://www.geeksforgeeks.org/portfolio-website-project-software-development/#</p>
         <script src="script.js"></script>
     </div>
 </body>
