@@ -33,3 +33,37 @@ function hideContact(){
         contact.style.display = 'block';
     }
 }
+
+let captcha;
+function generate(){
+    //clear old input
+    document.getElementById('submit').value = '';
+
+    //generate new captcha
+    captcha = document.getElementById("image");
+    let uniqueChar = "";
+
+    const randomChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    // Generate 5 random characters
+    for (let i = 0; i < 5; i++) {
+        uniqueChar += randomChar.charAt(Math.floor(Math.random() * randomChar.length));
+    }
+
+    //store generated input
+    captcha.innerHTML = uniqueChar;
+}
+
+function printmsg(){
+    const usr_input = document.getElementById('submit').value;
+
+    // check if input is correct
+    if(usr_input === captcha.innerHTML){
+        let s = document.getElementById('key').innerHTML = "Matched";
+        generate();
+    }
+    else{
+        let s = document.getElementById('key').innerHTML = "Not Matched";
+        generate();
+    }
+}

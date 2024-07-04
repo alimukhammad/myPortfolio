@@ -111,15 +111,46 @@
         </section>
 
         <section class="contact" id="contact">
+            <!-- add onload when clicked on contact button to open up -->
+
+            <!-- add captcha -->
+             <div>
+                <input type="text" placeholder="Captcha Code">
+             </div>
+             <div class="inline" onclick="generate()">
+                <i class="fas fa-sync"></i>         <!-- a refresh / renew Icon -->
+            </div>
+            <div id="image" class="inline" selectable="False"></div>
+            <input type="submit" id="btn" onclick="printmsg()" />
+            <p id="key"></p>
+
             <div>
                 Contact
+                <p>Phone #: (929)294-3386</p>
+                <p>Email: alimukhammad1@gmail.com</p>
+            </div>
+            <!-- ^ captcha ^ -->
+
+            <div>
+                <form class="container">
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="message">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
             <div>
-                phone #, email, etc
-            </div>
-            <div>
-                <div><a>LinkedIn</a></div>
-                <div><a>GitHub</a></div>
+                <div><a href="#">LinkedIn</a></div>
+                <div><a href="#">GitHub</a></div>
             </div>
         </section>
 
