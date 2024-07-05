@@ -1,36 +1,51 @@
+let exp = document.getElementById('exp');
+let home = document.getElementById('home');
+let project = document.getElementById('proj');
+let contact = document.getElementById('contact');
+
 function hideHome(){
-    let home = document.getElementById('home');
     if(home.style.display === 'block'){
         home.style.display = 'none';
+        
     }else{
         home.style.display = 'block';
+        exp.style.display = 'none';
+        project.style.display = 'none';
+        contact.style.display = 'none';
     }
 }
 
 function hideExp(){
-    let exp = document.getElementById('exp');
     if(exp.style.display === 'block'){
         exp.style.display = 'none';
+        
     }else{
         exp.style.display = 'block';
+        home.style.display = 'none';
+        project.style.display = 'none';
+        contact.style.display = 'none';
     }
 }
 
 function hideProject(){
-    let project = document.getElementById('proj');
     if(project.style.display === 'block'){
         project.style.display = 'none';
     }else{
         project.style.display = 'block';
+        exp.style.display = 'none';
+        home.style.display = 'none';
+        contact.style.display = 'none';
     }
 }
 
 function hideContact(){
-    let contact = document.getElementById('contact');
     if(contact.style.display === 'block'){
         contact.style.display = 'none';
     }else{
         contact.style.display = 'block';
+        project.style.display = 'none';
+        exp.style.display = 'none';
+        home.style.display = 'none';
     }
 }
 
@@ -56,14 +71,18 @@ function generate(){
 
 function printmsg(){
     const usr_input = document.getElementById('submit').value;
+    let email = document.getElementById('emailC');
+    let captcha = document.getElementById('captcha');
 
     // check if input is correct
     if(usr_input === captcha.innerHTML){
-        let s = document.getElementById('key').innerHTML = "Matched";
-        generate();
+        email.style.display = 'block';
+        captcha.style.display = 'none';  ///fix this 
     }
     else{
         let s = document.getElementById('key').innerHTML = "Not Matched";
         generate();
+        email.style.display = 'none';
     }
 }
+

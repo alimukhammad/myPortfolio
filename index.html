@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sardor Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+                            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
-<body>
+<body onload="generate()">
     <div class="box">
         <h1 class="fname">Sardor Alimukhammad</h1>
         <h3 class="title">Software Engineer & Designer</h3>
@@ -33,7 +35,8 @@
             </nav>
         </header>
     <!-- iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii____header____iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii -->
-
+    
+    <!-- ___________________________About___ME______________________ -->
         <section class="exp" id="home">
             <div>
                 <h3 class="aboutO">About me</h3>
@@ -47,8 +50,8 @@
             
             </div>
         </section>
-        <!-- ___________________________About___ME______________________ -->
 
+        <!-- ____________________________^__________Experience______________________________________ -->
         <section class="exp" id="exp">
             <div>
                 My Experience
@@ -96,8 +99,8 @@
                 Organization and your work
             </div>
         </section>
-        <!-- ____________________________^__________Experience______________________________________ -->
-
+        
+        <!-- ____________________________^__________Projects______________________________________ -->
         <section class="proj" id="proj">
             <div>
                 Projects
@@ -110,24 +113,25 @@
             </div>
         </section>
 
-        <section class="contact" id="contact" onload="generate()">
-            <!-- add onload when clicked on contact button to open up -->
-
-            <!-- add captcha -->
-             <div>
-                <input type="text" placeholder="Captcha Code">
-             </div>
-             <div class="inline" onclick="generate()">
-                <i class="fas fa-sync"></i>         <!-- a refresh / renew Icon -->
+        <!-- ____________________________^__________Contact  ______________________________________ -->
+        <section class="contact" id="contact" >
+            <div class="captcha">
+                <div class="captchaInp">
+                   <input type="text" id="submit" placeholder="Captcha Code">
+                </div>
+                <div class="captchaRef" onclick="generate()">
+                   <i class="fas fa-sync"></i>         <!-- a refresh / renew Icon -->
+               </div>
+               <div id="image" class="captchaImg" selectable="False">
+                   <!-- <img src="captcha.php" alt="Captcha Image"> -->
+               </div>
+               <input claa="captchaSub" type="submit" id="btn" onclick="printmsg()" />
+               <p id="key"></p>
             </div>
-            <div id="image" class="inline" selectable="False"></div>
-            <input type="submit" id="btn" onclick="printmsg()" />
-            <p id="key"></p>
 
             <div>
                 Contact
-                <p>Phone #: (9two9)two94-3386</p>
-                <p>Email: alimukhammad1@gmail.com</p>
+                <p id="emailC">Email: alimukhammad1@gmail.com</p>
             </div>
             <!-- ^ captcha ^ -->
 
