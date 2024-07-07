@@ -10,6 +10,20 @@
     /* box-sizing: border-box; */
 }
 
+/* When viewport height is less than 950px */
+/* @media (max-height: 950px) {
+    .box {
+        height: 100vh;
+    }
+} */
+
+/* For viewport heights of 950px and above */
+/* @media (min-height: 951px) {
+    .box {
+        height: 5000px;
+    }
+} */
+
 .nav-menu {
     list-style-type: none;
     padding: 0;

@@ -2,6 +2,7 @@ let exp = document.getElementById('exp');
 let home = document.getElementById('home');
 let project = document.getElementById('proj');
 let contact = document.getElementById('contact');
+let boxId = document.getElementById('boxId');
 
 function hideHome(){
     if(home.style.display === 'block'){
@@ -18,12 +19,15 @@ function hideHome(){
 function hideExp(){
     if(exp.style.display === 'block'){
         exp.style.display = 'none';
+        boxId.style.height = '100vh';
         
     }else{
         exp.style.display = 'block';
         home.style.display = 'none';
         project.style.display = 'none';
         contact.style.display = 'none';
+
+        boxId.style.height = '100%';
     }
 }
 
