@@ -4,6 +4,11 @@ let project = document.getElementById('proj');
 let contact = document.getElementById('contact');
 let boxId = document.getElementById('boxId');
 
+let homeBtn = document.getElementById('homeBtn');
+let expBtn = document.getElementById('expBtn');
+let projBtn = document.getElementById('projBtn');
+let contactBtn = document.getElementById('contactBtn');
+
 function hideHome(){
     if(home.style.display === 'block'){
         home.style.display = 'none';
@@ -13,6 +18,7 @@ function hideHome(){
         exp.style.display = 'none';
         project.style.display = 'none';
         contact.style.display = 'none';
+        boxId.style.height = '100vh';
     }
 }
 
@@ -39,6 +45,7 @@ function hideProject(){
         exp.style.display = 'none';
         home.style.display = 'none';
         contact.style.display = 'none';
+        boxId.style.height = '100vh';
     }
 }
 
@@ -50,6 +57,7 @@ function hideContact(){
         project.style.display = 'none';
         exp.style.display = 'none';
         home.style.display = 'none';
+        boxId.style.height = '100vh';
     }
 }
 

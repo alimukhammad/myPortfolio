@@ -3,26 +3,9 @@
     border-color: black;
     margin: 25px;
     padding-left: 50px;
-    padding-right: 50px;
-    /* height: auto; */
+    padding-right: 40px;
     height: 100vh;
-    /* height: calc(100vh - 50px); */
-    /* box-sizing: border-box; */
 }
-
-/* When viewport height is less than 950px */
-/* @media (max-height: 950px) {
-    .box {
-        height: 100vh;
-    }
-} */
-
-/* For viewport heights of 950px and above */
-/* @media (min-height: 951px) {
-    .box {
-        height: 5000px;
-    }
-} */
 
 .nav-menu {
     list-style-type: none;
@@ -35,25 +18,26 @@
     margin-bottom: 2px;
     size: 40px;
 }
+
 .title{
     margin-top: 2px;
     padding-top: 2px;
     size: 20px;
 }
 
-#home{
+.home{
     display:none;
 }
 
-#exp{
+.exp{
     display:none;
 }
 
-#proj{
+.proj{
     display:none;
 }
 
-#contact{
+.contact{
     display:none;
 }
 
@@ -68,7 +52,6 @@
     padding-top: 2px;
     font-size: 14px;
 }
-
 
 /* contact - form group */
 .container{
