@@ -72,7 +72,10 @@ function generate(){
 function printmsg(){
     const usr_input = document.getElementById('submit').value;
     let email = document.getElementById('emailC');
-    let captcha = document.getElementById('captcha');
+    let captcha = document.getElementById('image');
+
+    console.log(usr_input); //user input
+    console.log(captcha.innerHTML); //captcha code
 
     // check if input is correct
     if(usr_input === captcha.innerHTML){
